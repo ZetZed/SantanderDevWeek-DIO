@@ -23,15 +23,11 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    //Função para "verificar ao toque" de qual item do Menu (que fica no canto superior direito da Toolbar)  e fazer uma "ação"
+    //Função para "verificar ao toque" de qual item do Menu Notification (que fica no canto superior direito da Toolbar)  e fazer uma "ação"
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){ //Quando for clicado no item com id....
-            R.id.item_1 ->{ //Se for clicado no item com o id "Item_1"
-                Log.d("CLICK","Click no item 1") //Dispara um log no console..
-                true
-            }
-            R.id.item_2 ->{ //Se for clicado no item com o id "Item_2"
-                Log.d("CLICK","Click no item 2") //Dispara um log no console..
+            R.id.notification ->{ //Se for clicado no item com o id "notification"
+                Log.d("CLICK","Click no item notification") //Dispara um log no console..
                 true
             }
             else ->  super.onOptionsItemSelected(item) //Caso não selecione nenhum Item, volta para o inicio da função "onOptionsItemSelected"

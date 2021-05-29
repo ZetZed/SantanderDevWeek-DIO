@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SantanderDevWeek</string>
+    <string name="saldo_disponivel">Balance available</string>
+    <string name="saldo_limite">Balance + Limit</string>
+    <string name="ver_extrato">View Extract</string>
+    <string name="pagar">Pay</string>
+    <string name="transferir">Transfer</string>
+    <string name="recarregar">Recharge</string>
+    <string name="cartao_final">Final Card</string>
+</resources>

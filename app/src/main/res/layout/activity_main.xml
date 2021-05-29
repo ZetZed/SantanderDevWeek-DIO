@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -14,6 +19,8 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        app:title=" "
+        app:titleTextColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,14 +56,24 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/tv_usuario"
+        android:id="@+id/tv_ola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Olá, Zet"
+        android:text="Olá, "
         android:layout_margin="16dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Zet"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/tv_ola"
+        app:layout_constraintTop_toTopOf="@+id/tv_ola"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ola"/>
 
     <TextView
         android:id="@+id/tv_agencia"
@@ -146,6 +163,7 @@
                 app:layout_constraintStart_toStartOf="@id/tv_saldo"/>
 
             <TextView
+                android:id="@+id/tv_limite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="R$ 13.598,54"
@@ -327,3 +345,5 @@
         android:layout_marginRight="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

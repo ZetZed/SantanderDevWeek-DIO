@@ -15,4 +15,4 @@ O projeto se trata em fazer um clone do layout do aplicativo bancário(Santander
 
 Com este projeto pude aprender mais sobre o Android Studio e a linguagem Kotlin e isso é muito gratificante!🙏
 
-<img align="center" src="https://user-images.githubusercontent.com/60768726/120505362-47fc5b00-c39b-11eb-9f88-d602098bd088.png">
+<img align="centre" src="https://user-images.githubusercontent.com/60768726/120505362-47fc5b00-c39b-11eb-9f88-d602098bd088.png">
